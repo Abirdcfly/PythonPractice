@@ -13,7 +13,7 @@
 
 # def change(a):
 # #     print 'id a ', id(a)
-    # a = 10
+# a = 10
 #     print ctypes.cast(id(a), ctypes.py_object).value
 #     print n,'haha'
 #     print 'id a =10 ', id(a)
@@ -546,8 +546,8 @@
 #
 #     main()
 
-import time
-from functools import wraps
+# import time
+# from functools import wraps
 # def logger(fn):
 #     @wraps(fn)
 #     def wrapper(*args, **kwargs):
@@ -599,3 +599,20 @@ from functools import wraps
 # print multipy(2, 10)
 # # print sum_num(100)
 # # print sum_num(10000000)
+# from pprint import pprint
+# a = ["123", "234", "134"]
+# print a
+#
+# def tuplea(a):
+#     return (a[0], a[1])
+#
+# print sorted(a, key=tuplea)
+
+
+list_to_be_sorted = [{'name':'Homer', 'age':10, 'sales':100}, {'name':'H1omer', 'age':10, 'sales':200}, {'name':'H2omer', 'age':20, 'sales':300},
+                     {'name':'H3omer', 'age':30, 'sales':300}]
+newlist = sorted(list_to_be_sorted, key=lambda k: (k['age'], k['sales']))
+print newlist
+#
+# a = {'a':2}
+# print a.a
